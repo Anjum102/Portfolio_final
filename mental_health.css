@@ -1,0 +1,92 @@
+/* Why Mental Health Matters Section */
+.why-mental-health {
+    display: flex;
+    justify-content: center;
+    padding: 0rem 2rem 6rem; /* Reduced upper padding */
+}
+
+.why-mental-health-box {
+    background-color: #12143f; /* Warm coral pink background */
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    max-width: 1300px;
+    width: 100%;
+    text-align: center;
+    min-height: 450px; /* Increased height */
+}
+
+.why-mental-health-box h2 {
+    font-size: 32px;
+    color: #fbf7f7;
+    margin-bottom: 2rem;
+}
+
+/* Cards Layout */
+.why-mental-health-cards {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    background-color: #ffffff;
+    padding: 2px;
+    border-radius: 16px;
+    width: 350px; /* Increased width */
+    height: 420px; /* Increased height */
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%; /* Full width of the card */
+    height: calc(100% - 60px); /* Leave space for title + gap */
+    object-fit: cover;
+    border: 0px solid #ffffff;
+    border-radius: 12px;
+}
+
+.card h3 {
+    font-size: 22px;
+    color: #0f1260;
+    margin-top: 15px; /* Space between image and heading */
+}
+
+
+/* Card Content Styling */
+.card p {
+    font-size: 18px;
+    color: #4b4b4b;
+    line-height: 1.6;
+}
+
+/* Hover Effects */
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .why-mental-health-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 340px;
+        height: auto; /* Allow height to adjust naturally */
+    }
+
+    .why-mental-health-box {
+        padding: 30px;
+        min-height: 400px;
+    }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="profile.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>Profile Page</title>
+</head>
+<body>
+
+  <!-- Back Button -->
+<a href="index.html" id="backButton" class="back-button">
+  <i class="fas fa-arrow-left"></i> Back
+</a>
+
+
+  <!-- Background Overlay -->
+  <div class="background-overlay"></div>
+
+  <div class="profile-card">
+    <div class="top-buttons">
+        <a href="#" class="link-button" id="connectButton">
+          <i class="fas fa-user-plus"></i> Connect
+        </a>
+        <a href="#" class="link-button" id="soundTherapyButton">
+          <!--<i class="fas fa-music"></i> Sound Therapy-->
+        </a>
+    </div>
+
+    <img src="profile_icon.webp" alt="Profile Picture" class="profile-pic" />
+
+    <h2>Anjum</h2>
+    <p class="location">New Delhi, IGDTUW</p>
+    <p class="quote">
+      <i>"Every skill you master unlocks a new version of yourself—keep learning, keep leveling up."</i>
+    </p>
+
+    <div class="stats">
+        <div>
+          <span class="highlight" id="meditationStreakCount">55</span>
+          <span>Daily Streak</span>
+        </div>
+        <div>
+          <span class="highlight">43</span>
+          <span>Challenges Completed</span>
+        </div>
+        <div>
+          <span class="highlight">21</span>
+          <span>Affirmations</span>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button class="action-button" id="dailyChallengeButton">💪 Daily Challenge</button>
+        <button class="action-button" id="gratitudeJournalButton">🌸 Gratitude Journal</button>
+        <button class="action-button" id="meditationStreakButton">🙏 Daily Streak</button>
+        <button class="action-button" id="moodTrackerButton">😊 Tracker</button>
+    </div>
+  </div>
+
+  <!-- Daily Challenge Modal -->
+<div id="dailyChallengeModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('dailyChallengeModal')">&times;</span>
+    <h3>Today's Challenge</h3>
+    <p>Complete 5 minutes of deep breathing!</p>
+    <button class="close-button" onclick="closeModal('dailyChallengeModal')">Close</button>
+  </div>
+</div>
+
+
+  <!-- Sound Therapy Modal -->
+<div id="soundModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('soundModal')">&times;</span>
+    <audio id="soundPlayer" controls>
+      <source src="sound.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <button class="close-button" onclick="closeModal('soundModal')">Back to Profile</button>
+  </div>
+</div>
+
+
+
+  <!-- Gratitude Journal Modal -->
+  <div id="gratitudeModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('gratitudeModal')">&times;</span>
+      <h3>Gratitude Journal</h3>
+      <textarea id="gratitudeEntry" placeholder="Write down what you're grateful for..."></textarea>
+      <button class="save-button" id="saveGratitude">Save</button>
+    </div>
+  </div>
+
+  <!-- Mood Tracker Modal -->
+  <div id="moodModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('moodModal')">&times;</span>
+      <h3>Mood Tracker</h3>
+      <form id="moodForm">
+        <select id="moodSelect">
+          <option value="">-- Select Your Mood --</option>
+          <option value="Happy">😊 Happy</option>
+          <option value="Sad">😔 Sad</option>
+          <option value="Excited">🤩 Excited</option>
+          <option value="Stressed">😖 Stressed</option>
+          <option value="Relaxed">😌 Relaxed</option>
+        </select>
+        <button type="submit" class="save-button">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="profile.js"></script>
+</body>
+</html>

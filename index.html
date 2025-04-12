@@ -1,12 +1,192 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Builder</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <title>Skill Sphere</title>
+     <link rel="stylesheet" href="style1.css">
+     <link rel="stylesheet" href="register.css">
+     <link rel="stylesheet" href="mental_health.css">
+     <script src="script.js" defer></script>
+     <script type="module" src="register.js" defer></script>
+     <!-- <script type="module" src="login.js" defer></script> -->
+    
+    
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="logo.jpg" alt=" Logo">
+                <div class="logo-text">SkillSphere<span></span></div>
+            </div>
+            <ul>
+                <li><a href="aitool.html">AI Tools</a></li>
+                
+                <li><a href="https://portfoli-bay.vercel.app">Portfolio Builder</a></li> 
+                <li><a href="https://chatme-sooty.vercel.app/login">Community</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li>
+                    <a href="#" class="login-btn">LOGIN</a>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <!-- Blur Background Overlay -->
+    <div class="blur-bg-overlay" id="blurBgOverlay" onclick="closeForm()"></div>
+
+    <!-- Form Popup -->
+    <div class="form-popup" id="formPopup">
+        <span class="close-btn material-symbols-rounded">X</span>
+        <!-- Login Form -->
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Welcome Back</h2>
+                <p>Please log in using personal information to stay connected with us</p>
+            </div>
+            <div class="form-content">
+                <!-- <span class="close-btn" onclick="closeForm()">&times;</span> -->
+                <h2>LOGIN</h2>
+                <!-- <form id="loginFormContent"> -->
+                    <form action="#">
+                        <div class="input-field">
+                            <input type="text" required>
+                            <label >Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password"  required>
+                            <label>Password</label>
+                        </div>
+                        <a href="#" class="forget-pass">Forgot Password?</a>
+                        <button type="submit" >Log In</button>
+
+                    </form>
+                    <div class="bottom-link">
+                        Don't have an account? 
+                        <a href="#" id="signup-link">Sign up</a>
+                    </div>
+                
+                <!-- </form> -->
+            </div>
+        </div>
+
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Create Account</h2>
+                <p>To become a part of our community , please sign up using your personal information</p>
+            </div>
+            <div class="form-content">
+                <!-- <span class="close-btn" onclick="closeForm()">&times;</span> -->
+                <h2>SIGNUP</h2>
+                <!-- <form id="loginFormContent"> -->
+                    <form action="#">
+                        <div class="input-field">
+                            <input type="text" id="email" required>
+                            <label >Enter your email</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" id ="password" required>
+                            <label>Create Password</label>
+                        </div>
+                        <div class="policy-text">
+                            <input type="checkbox" id="policy">
+                            <label for="policy">
+                                I agree the
+                                <a href="#"> Terms & Conditions</a>
+                            </label>
+                        </div>
+                        <button type="submit" id="submit">Sign Up</button>
+
+                    </form>
+                    <div class="bottom-link">
+                        Alredy have an account? 
+                        <a href="#" id="login-link">Login</a>
+                    </div>
+                
+                <!-- </form> -->
+            </div>
+        </div>
+    </div>
+
+        
+
+
+
+
+    <section class="hero">
+        <div class="content">
+            <h1><span>Empowering</span> Growth</h1>
+            <p>
+                SkillSphere is an AI-powered platform designed to supercharge your career journey. 🚀 From summarizing lengthy PDFs 📄 to parsing resumes 📑 and finding jobs tailored to your skills 🎯, our intelligent tools help you save time ⏱ and make smarter decisions. With our intuitive portfolio builder 💼, you can craft a standout digital presence that truly reflects your strengths and achievements 🌟.
+
+But we’re more than just tools — we’re a growing community 🤝. SkillSphere connects users through one-on-one chats 💬, allowing individuals to share their skill sets 🧠, collaborate on ideas 💡, and learn from each other 📚. Whether you're a job seeker, student, freelancer, or professional 👩‍💻👨‍💼, our platform offers a space to grow your network and gain insights from peers in real time 🌐.
+
+At SkillSphere, we believe that when smart technology 🤖 meets human connection ❤, real growth happens. 
+
+
+            </p>
+            <a href="aitool.html" class="btn">AI Tools</a>
+        </div>
+        <div class="image">
+            <img src="main.jpg" alt="Mental Health Illustration" />
+        </div>
+        </section>
+
+        <section class="why-mental-health">
+            <div class="why-mental-health-box">
+                <h2>Why SkillSphere Matters</h2>
+                <div class="why-mental-health-cards">
+                    <div class="card">
+                        <img src="learning.jpg" alt="Stress Management">
+                        <h3>Empower Learning</h3>
+                        <!-- <p>Learning to manage stress improves overall well-being and enhances focus.</p> -->
+                    </div>
+                    <div class="card">
+                        <img src="growth.jpg" alt="Emotional Support">
+                        <h3>Foster Growth</h3>
+                        
+                    </div>
+                    <div class="card">
+                        <img src="connection.jpg">
+                        <h3>Build Connections</h3>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+   
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about" id="about">
+                <h3>About Us</h3>
+                <p>SkillSphere is an AI-powered platform that boosts your career by summarizing PDFs, analyzing resumes, and matching you with job opportunities. It offers a portfolio builder and connects users for skill-sharing and collaboration. Whether you're a job seeker or professional, SkillSphere helps you grow your network and make smarter career choices.</p>
+            </div>
+    
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: support@skillsphere.com</p>
+                <p>Phone: +1-800-123-4567</p>
+                <p>Follow us on social media!</p>
+                <p>Twitter: @SkillSphere</p>
+                <p>LinkedIn: SkillSphere</p>
+            </div>
+    
+            
+        </div>
+    
+        <div class="footer-bottom">
+            <p>© 2025 SkillSphere | Empowering Tech, Embracing Life ❤️</p>
+        </div>
+    </footer>
+    
+    
+</body>
 </html>
