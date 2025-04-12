@@ -59,6 +59,8 @@ tailwind.config.js
 For queries or contributions, feel free to reach out:
 Email: support@skillsphere.com
 LinkedIn: SkillSphere
+
 Email: support@skillsphere.com
+
 LinkedIn: SkillSphere
 
